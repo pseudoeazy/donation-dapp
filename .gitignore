@@ -2,6 +2,8 @@
 build/
 *.sol.js
 
+# public - build files
+public
 # Node modules
 node_modules/
 

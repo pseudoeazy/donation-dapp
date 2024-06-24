@@ -7,7 +7,59 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <h1>Donation</h1>
-    <script src="index.js"></script>
+    <main class="container">
+      <h1 class="title">Donation Smart Contract Dapp</h1>
+      <div class="wallet">
+        <button id="connect">Connect Wallet</button>
+      </div>
+
+      <section class="donation">
+        <h2>Enter Donation</h2>
+
+        <form id="donate">
+          <div>
+            <input
+              id="sender"
+              type="text"
+              autocomplete="off"
+              disabled
+              placeholder="Sender"
+            />
+          </div>
+
+          <div>
+            <input
+              id="recipient"
+              type="text"
+              autocomplete="off"
+              disabled
+              placeholder="Recipient"
+            />
+          </div>
+          <div>
+            <input
+              id="amount"
+              type="number"
+              autocomplete="off"
+              disabled
+              placeholder="Amount"
+            />
+          </div>
+          <div>
+            <button id="transfer" type="button" class="ripple" disabled>
+              Donate Ether
+            </button>
+          </div>
+        </form>
+      </section>
+
+      <section>
+        <h2>Donations History</h2>
+        <div id="pending-transactions">
+          No pending transactions at the moment.
+        </div>
+      </section>
+    </main>
+    <script type="module" src="bundle.js"></script>
   </body>
 </html>

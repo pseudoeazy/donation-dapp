@@ -7,6 +7,7 @@
     "test": "test"
   },
   "scripts": {
+    "build": "webpack",
     "start": "serve public",
     "compileDeploy": "tsc --project src/client/tsconfig.json && npm run deploy",
     "deploy": "copyfiles -f src/client/*.html src/client/*.css public",
@@ -17,8 +18,16 @@
   "license": "ISC",
   "devDependencies": {
     "@types/node": "^20.14.8",
+    "@types/web3": "^1.2.2",
     "copyfiles": "^2.4.1",
     "serve": "^14.2.3",
-    "typescript": "^5.5.2"
+    "ts-loader": "^9.5.1",
+    "typescript": "^5.5.2",
+    "webpack": "^5.92.1",
+    "webpack-cli": "^5.1.4"
+  },
+  "dependencies": {
+    "@metamask/detect-provider": "^2.0.0",
+    "web3": "^4.10.0"
   }
 }
