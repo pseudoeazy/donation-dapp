@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+      "sourceMap": true,
+      "outDir": "./dist",
+      "target": "es5",
+      "module": "es6",
+      "esModuleInterop": true,
+      "skipLibCheck": true,
+      "forceConsistentCasingInFileNames": true,
+      "lib": [
+        "dom",
+        "es2017"
+      ]
+    },
+    "include": ["src/**/*.ts", "test/**/*.ts"],
+    "exclude": ["dist", "node_modules"]
+  }

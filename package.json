@@ -1,0 +1,24 @@
+{
+  "name": "donation-dapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "serve public",
+    "compileDeploy": "tsc --project src/client/tsconfig.json && npm run deploy",
+    "deploy": "copyfiles -f src/client/*.html src/client/*.css public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "copyfiles": "^2.4.1",
+    "serve": "^14.2.3",
+    "typescript": "^5.5.2"
+  }
+}

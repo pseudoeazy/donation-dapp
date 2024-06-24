@@ -1,0 +1,35 @@
+# Truffle artifacts
+build/
+*.sol.js
+
+# Node modules
+node_modules/
+
+
+# Local environment files
+.env
+.env.local
+.env.*.local
+
+# Logs
+npm-debug.log*
+
+# Solidity coverage
+coverage/
+coverage.json
+coverage-final.json
+lcov-report/
+
+# Coverage directory used by tools like istanbul
+coverage/
+
+# npm package-lock
+package-lock.json
+
+
+# Editor and OS files
+.vscode/
+.idea/
+*.bak
+*.tmp
+*.log
