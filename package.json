@@ -7,10 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "start": "serve",
-    "build": "tsc --project src/client/tsconfig.json && webpack && npm run deploy",
-    "deploy": "copyfiles -f src/client/*.html src/client/*.css public",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "serve public",
+    "dev": "webpack",
+    "build": "webpack && npm run develop",
+    "develop": "copyfiles -f src/client/*.html src/client/*.css public"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +18,7 @@
   "devDependencies": {
     "@types/node": "^20.14.8",
     "@types/web3": "^1.2.2",
+    "copy-webpack-plugin": "^12.0.2",
     "copyfiles": "^2.4.1",
     "serve": "^14.2.3",
     "ts-loader": "^9.5.1",

@@ -85,7 +85,7 @@ async function fetchAbiFile(): Promise<
   { abi: any; address: string } | undefined
 > {
   try {
-    const abiFilePath = '/build/contracts/Donation.json';
+    const abiFilePath = '/Donation.json';
     const response = await fetch(abiFilePath);
     if (!response.ok) {
       throw new Error(`HTTP error! status: ${response.status}`);
