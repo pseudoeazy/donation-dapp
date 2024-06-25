@@ -10,14 +10,23 @@
     <main class="container">
       <h1 class="title">Donation Smart Contract Dapp</h1>
       <div class="wallet">
-        <button id="connect">Connect Wallet</button>
+        <h2>
+          Total Donation Raised
+          <span id="donationRaised"><strong></strong></span>
+        </h2>
+        <div class="actions">
+          <button id="connect">Connect Wallet</button>
+          <button id="withdraw">Withdraw Donations</button>
+          <button id="balance">Get Balance</button>
+        </div>
       </div>
 
       <section class="donation">
         <h2>Enter Donation</h2>
 
-        <form id="donate">
+        <form>
           <div>
+            <label for="sender">Sender</label>
             <input
               id="sender"
               type="text"
@@ -28,6 +37,7 @@
           </div>
 
           <div>
+            <label for="recipient">Sender</label>
             <input
               id="recipient"
               type="text"
@@ -37,16 +47,18 @@
             />
           </div>
           <div>
+            <label for="amount">Amount</label>
             <input
               id="amount"
               type="number"
               autocomplete="off"
               disabled
               placeholder="Amount"
+              required
             />
           </div>
           <div>
-            <button id="transfer" type="button" class="ripple" disabled>
+            <button id="donate" type="button" class="ripple" disabled>
               Donate Ether
             </button>
           </div>

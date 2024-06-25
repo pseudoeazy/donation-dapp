@@ -7,9 +7,8 @@
     "test": "test"
   },
   "scripts": {
-    "build": "webpack",
-    "start": "serve public",
-    "compileDeploy": "tsc --project src/client/tsconfig.json && npm run deploy",
+    "start": "serve",
+    "build": "tsc --project src/client/tsconfig.json && webpack && npm run deploy",
     "deploy": "copyfiles -f src/client/*.html src/client/*.css public",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
